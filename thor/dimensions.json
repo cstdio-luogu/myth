@@ -1,0 +1,42 @@
+{
+  "head": {
+    "width": 312,
+    "height": 533
+  },
+  "torso": {
+    "width": 390,
+    "height": 504
+  },
+  "upperArmLeft": {
+    "width": 107,
+    "height": 416
+  },
+  "upperArmRight": {
+    "width": 117,
+    "height": 415
+  },
+  "forearmLeft": {
+    "width": 159,
+    "height": 463
+  },
+  "forearmRight": {
+    "width": 158,
+    "height": 450
+  },
+  "thighLeft": {
+    "width": 134,
+    "height": 428
+  },
+  "thighRight": {
+    "width": 134,
+    "height": 424
+  },
+  "shinLeft": {
+    "width": 223,
+    "height": 416
+  },
+  "shinRight": {
+    "width": 233,
+    "height": 416
+  }
+}

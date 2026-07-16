@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "name": "Thor",
+  "designSize": { "width": 620, "height": 920 },
+  "referenceBounds": { "width": 1440, "height": 1610 },
+  "parts": [
+    {
+      "id": "torso", "texture": "/assets/thor/torso.png", "parent": null,
+      "sourceSize": [390, 504], "proximalJoint": [0.49, 0.887], "distalJoint": [0.5, 0.083],
+      "sockets": {
+        "neck": [0.5, 0.145],
+        "leftShoulder": [0.105, 0.265], "rightShoulder": [0.887, 0.265],
+        "leftHip": [0.231, 0.887], "rightHip": [0.746, 0.887]
+      },
+      "layer": 20, "localAngleLimit": [-0.38, 0.38]
+    },
+    {
+      "id": "thighLeft", "texture": "/assets/thor/thighLeft.png", "parent": "torso", "parentSocket": "leftHip",
+      "sourceSize": [134, 428], "proximalJoint": [0.493, 0.10], "distalJoint": [0.507, 0.925],
+      "layer": 14, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinLeft", "texture": "/assets/thor/shinLeft.png", "parent": "thighLeft",
+      "sourceSize": [223, 416], "proximalJoint": [0.283, 0.103], "distalJoint": [0.323, 0.757], "flipX": true,
+      "layer": 13, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "thighRight", "texture": "/assets/thor/thighRight.png", "parent": "torso", "parentSocket": "rightHip",
+      "sourceSize": [134, 424], "proximalJoint": [0.507, 0.101], "distalJoint": [0.493, 0.925],
+      "layer": 16, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinRight", "texture": "/assets/thor/shinRight.png", "parent": "thighRight",
+      "sourceSize": [233, 416], "proximalJoint": [0.279, 0.103], "distalJoint": [0.318, 0.757],
+      "layer": 15, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "upperArmLeft", "texture": "/assets/thor/upperArmLeft.png", "parent": "torso", "parentSocket": "leftShoulder",
+      "sourceSize": [107, 416], "proximalJoint": [0.505, 0.105], "distalJoint": [0.505, 0.905],
+      "layer": 18, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmLeft", "texture": "/assets/thor/forearmLeft.png", "parent": "upperArmLeft",
+      "sourceSize": [159, 463], "proximalJoint": [0.623, 0.095], "distalJoint": [0.50, 0.70],
+      "layer": 17, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "upperArmRight", "texture": "/assets/thor/upperArmRight.png", "parent": "torso", "parentSocket": "rightShoulder",
+      "sourceSize": [117, 415], "proximalJoint": [0.496, 0.105], "distalJoint": [0.496, 0.905],
+      "layer": 22, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmRight", "texture": "/assets/thor/forearmRight.png", "parent": "upperArmRight",
+      "sourceSize": [158, 450], "proximalJoint": [0.373, 0.10], "distalJoint": [0.50, 0.70],
+      "layer": 21, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "head", "texture": "/assets/thor/head.png", "parent": "torso", "parentSocket": "neck",
+      "sourceSize": [312, 533], "proximalJoint": [0.5, 0.927], "distalJoint": [0.5, 0.36],
+      "layer": 24, "localAngleLimit": [-0.314, 0.314]
+    }
+  ]
+}
