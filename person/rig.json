@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "name": "Loki",
+  "designSize": { "width": 620, "height": 920 },
+  "referenceBounds": { "width": 1440, "height": 1655 },
+  "parts": [
+    {
+      "id": "torso", "texture": "/assets/loki/torso.png", "parent": null,
+      "sourceSize": [362, 513], "proximalJoint": [0.497, 0.893], "distalJoint": [0.5, 0.082],
+      "sockets": {
+        "neck": [0.5, 0.142],
+        "leftShoulder": [0.108, 0.267], "rightShoulder": [0.901, 0.267],
+        "leftHip": [0.24, 0.893], "rightHip": [0.754, 0.893]
+      },
+      "layer": 20, "localAngleLimit": [-0.38, 0.38]
+    },
+    {
+      "id": "thighLeft", "texture": "/assets/loki/thighLeft.png", "parent": "torso", "parentSocket": "leftHip",
+      "sourceSize": [126, 445], "proximalJoint": [0.50, 0.093], "distalJoint": [0.50, 0.91],
+      "layer": 14, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinLeft", "texture": "/assets/loki/shinLeft.png", "parent": "thighLeft",
+      "sourceSize": [213, 449], "proximalJoint": [0.282, 0.096], "distalJoint": [0.329, 0.77], "flipX": true,
+      "layer": 13, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "thighRight", "texture": "/assets/loki/thighRight.png", "parent": "torso", "parentSocket": "rightHip",
+      "sourceSize": [124, 444], "proximalJoint": [0.50, 0.093], "distalJoint": [0.50, 0.91],
+      "layer": 16, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinRight", "texture": "/assets/loki/shinRight.png", "parent": "thighRight",
+      "sourceSize": [219, 449], "proximalJoint": [0.283, 0.096], "distalJoint": [0.329, 0.77],
+      "layer": 15, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "upperArmLeft", "texture": "/assets/loki/upperArmLeft.png", "parent": "torso", "parentSocket": "leftShoulder",
+      "sourceSize": [112, 415], "proximalJoint": [0.50, 0.105], "distalJoint": [0.50, 0.905],
+      "layer": 18, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmLeft", "texture": "/assets/loki/forearmLeft.png", "parent": "upperArmLeft",
+      "sourceSize": [161, 461], "proximalJoint": [0.646, 0.10], "distalJoint": [0.50, 0.70],
+      "layer": 17, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "upperArmRight", "texture": "/assets/loki/upperArmRight.png", "parent": "torso", "parentSocket": "rightShoulder",
+      "sourceSize": [107, 416], "proximalJoint": [0.50, 0.105], "distalJoint": [0.50, 0.905],
+      "layer": 22, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmRight", "texture": "/assets/loki/forearmRight.png", "parent": "upperArmRight",
+      "sourceSize": [186, 451], "proximalJoint": [0.36, 0.10], "distalJoint": [0.50, 0.70],
+      "layer": 21, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "head", "texture": "/assets/loki/head.png", "parent": "torso", "parentSocket": "neck",
+      "sourceSize": [277, 517], "proximalJoint": [0.5, 0.923], "distalJoint": [0.5, 0.36],
+      "layer": 24, "localAngleLimit": [-0.314, 0.314]
+    }
+  ]
+}
