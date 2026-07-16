@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "name": "Odin",
+  "designSize": { "width": 620, "height": 920 },
+  "referenceBounds": { "width": 1440, "height": 1695 },
+  "parts": [
+    {
+      "id": "torso", "texture": "/assets/odin/torso.png", "parent": null,
+      "sourceSize": [385, 533], "proximalJoint": [0.5, 0.91], "distalJoint": [0.5, 0.085],
+      "sockets": {
+        "neck": [0.5, 0.145],
+        "leftShoulder": [0.13, 0.253], "rightShoulder": [0.87, 0.253],
+        "leftHip": [0.27, 0.91], "rightHip": [0.73, 0.91]
+      },
+      "layer": 20, "localAngleLimit": [-0.38, 0.38]
+    },
+    {
+      "id": "thighLeft", "texture": "/assets/odin/thighLeft.png", "parent": "torso", "parentSocket": "leftHip",
+      "sourceSize": [138, 435], "proximalJoint": [0.493, 0.09], "distalJoint": [0.464, 0.908],
+      "layer": 14, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinLeft", "texture": "/assets/odin/shinLeft.png", "parent": "thighLeft",
+      "sourceSize": [215, 417], "proximalJoint": [0.16, 0.095], "distalJoint": [0.32, 0.765], "flipX": true,
+      "layer": 13, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "thighRight", "texture": "/assets/odin/thighRight.png", "parent": "torso", "parentSocket": "rightHip",
+      "sourceSize": [130, 427], "proximalJoint": [0.523, 0.084], "distalJoint": [0.446, 0.904],
+      "layer": 16, "localAngleLimit": [-1.25, 1.25]
+    },
+    {
+      "id": "shinRight", "texture": "/assets/odin/shinRight.png", "parent": "thighRight",
+      "sourceSize": [229, 417], "proximalJoint": [0.175, 0.094], "distalJoint": [0.284, 0.772],
+      "layer": 15, "localAngleLimit": [-2.55, 2.55]
+    },
+    {
+      "id": "upperArmLeft", "texture": "/assets/odin/upperArmLeft.png", "parent": "torso", "parentSocket": "leftShoulder",
+      "sourceSize": [113, 426], "proximalJoint": [0.478, 0.124], "distalJoint": [0.522, 0.864],
+      "layer": 18, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmLeft", "texture": "/assets/odin/forearmLeft.png", "parent": "upperArmLeft",
+      "sourceSize": [151, 425], "proximalJoint": [0.689, 0.115], "distalJoint": [0.50, 0.70],
+      "layer": 17, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "upperArmRight", "texture": "/assets/odin/upperArmRight.png", "parent": "torso", "parentSocket": "rightShoulder",
+      "sourceSize": [112, 426], "proximalJoint": [0.571, 0.122], "distalJoint": [0.545, 0.864],
+      "layer": 22, "localAngleLimit": [-2.8, 2.8]
+    },
+    {
+      "id": "forearmRight", "texture": "/assets/odin/forearmRight.png", "parent": "upperArmRight",
+      "sourceSize": [153, 425], "proximalJoint": [0.294, 0.111], "distalJoint": [0.50, 0.70],
+      "layer": 21, "localAngleLimit": [-2.75, 2.75]
+    },
+    {
+      "id": "head", "texture": "/assets/odin/head.png", "parent": "torso", "parentSocket": "neck",
+      "sourceSize": [367, 550], "proximalJoint": [0.5, 0.94], "distalJoint": [0.5, 0.36],
+      "layer": 24, "localAngleLimit": [-0.314, 0.314]
+    }
+  ]
+}
